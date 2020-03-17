@@ -1,0 +1,914 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  /* font-size: 1.04vw; */
+}
+body {
+  font-family: 'Alegreya Sans','Spectral', sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px  auto;
+  outline: 0;
+  text-decoration: none;
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+}
+.container {
+  max-width: 70.4rem;
+  margin: 0 auto;
+}
+/* Шапка */
+.header {
+  background: url(../img/back-top.png) top center no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+.head__wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.head__wrap {
+  width: 12%;
+}
+.head__logo {
+  position: relative;
+  left: -1.15rem;
+  z-index: 1;
+}
+.head__logo p {
+  position: absolute;
+  font-size: 1.65rem;
+  top: 1rem;
+  left: 2.8rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(236, 184, 108);
+  line-height: 1.167;
+  z-index: 2;
+}
+.head__description {
+  width: 24%;
+  margin-top: 0.85rem;
+  margin-left: -1rem;
+}
+.head__description p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  text-align: left;
+}
+.head__main {
+  display: flex;
+  margin-left: 10.7rem;
+  width: 55%;
+}
+.head__direction {
+  display: flex;
+  align-items: flex-start;
+  padding-top: .8rem;
+  padding-left: .5rem;
+}
+.head__direction img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.head__direction p{
+  margin-left: 1.15rem;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  text-align: left;
+}
+.head__time {
+  display: flex;
+  margin-left: 2.9rem;
+  align-items: flex-start;
+  padding-top: .8rem;
+}
+.head__time img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.head__time p {
+  margin-left: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.313;
+  text-align: left;
+}
+.head__phone {
+  display: flex;
+  margin-left: 3rem;
+  align-items: flex-start;
+  padding-top: .8rem;
+}
+.head__phone img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.head__phone-inner {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.7rem;
+}
+.head__phone-number {
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+.head__phone-callBack {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(32, 31, 30);
+  line-height: 1.2;
+  text-align: center;
+  border-bottom: 3px dashed rgb(219, 185, 116);
+  cursor: pointer;
+}
+.head__inner {
+  display: flex;
+  padding-left: 0.8rem;
+  padding-bottom: 4.5rem;
+  position: relative;
+}
+.head__content {
+  width: 45%;
+}
+.head__title h1 {
+  font-size: 3rem;
+  font-family: "Spectral";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 0.45rem;
+}
+.head__title h2 {
+  font-size: 2.6rem;
+  font-family: "Spectral";
+  color: #a47e67;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 1.75rem;
+}
+.head__text p {
+  font-size: 1.6rem;
+  font-family: "Alegreya Sans";
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: left;
+}
+.head__boss {
+  width: 55%;
+  position: relative;
+}
+.head__image {
+  position: absolute;
+  left: -1.5rem;
+  top: -5.8rem;
+}
+.head__image img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.head__name {
+  width: 13.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 11rem;
+  top: 2.2rem;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+.head__name p:nth-child(1) {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+}
+.head__name p:nth-child(2) {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+}
+/* Кнопка подбора*/
+.selection {
+  background: url(../img/back-top_2.png) center no-repeat;
+  width: 100%;
+  background-size: cover;
+  min-height: 18.25rem;
+}
+.selection__wrapper {
+  display: flex;
+}
+.selection__btn {
+  margin-left: .75rem;
+}
+.selection__btn p {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Alegreya Sans";
+  font-weight: normal;
+  font-style: normal;
+}
+.selection__btn button {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-family: "Spectral";
+  font-weight: bold;
+  font-style: normal;
+  line-height: 2.417;
+  text-align: left;
+  background-color: #8d644a;
+  border-radius: 2rem;
+  border-width: 0;
+  padding: 0.5rem 2rem;
+  margin-top: -.9rem;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+  border-bottom: 4px solid #563d2d;
+  box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.15);
+}
+/* Преимущества */
+.advantage {
+  display: flex;
+}
+.advantage__wrapper {
+  position: relative;
+  display: flex;
+  width: 50%;
+}
+.advantage__circleMax {
+  position: absolute;
+  top: -3.1rem;
+  left: -8.5rem;
+  width: 51.3rem;
+  height: 51.3rem;
+  border: 2px solid rgb(185, 184, 180);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.advantage__circleMin {
+  position: absolute;
+  top: 4.5rem;
+  left: -0.65rem;
+  width: 35.75rem;
+  height: 35.75rem;
+  border: 2px solid rgb(185, 184, 180);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.advantage__circle-Title{
+  border-radius: 50%;
+  background-color: rgb(164, 126, 103);
+  position: absolute;
+  top: -3.8rem;
+  left: 8.6rem;
+  width: 17.9rem;
+  height: 17.9rem;
+  text-align: center;
+  z-index: 5;
+}
+.advantage__circle-Title h3 {
+  font-size: 2rem;
+  font-family: "Spectral";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.advantage__circle-Title p {
+  font-size: 1.2rem;
+  font-family: "Alegreya Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 2.25rem;
+}
+.advantage__book {
+  z-index: 7;
+  margin-top: 4.9rem;
+  margin-left: -2.8rem;
+  width: 38rem;
+}
+.advantage__pen {
+  position: absolute;
+  z-index: 8;
+  top: 12.5rem;
+  left: 5.2rem;
+  width: 7.25rem;
+}
+.advantage__pen img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.advantage__print {
+  position: absolute;
+  z-index: 9;
+  top: 8.5rem;
+  left: 24rem;
+  width: 46%;
+}
+.advantage__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  position: relative;
+}
+.advantage__item {
+  display: flex;
+  flex-direction: row;
+}
+.advantage__text {
+  align-self: center;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  text-align: left;
+  padding-right: 2rem;
+}
+.advantage__text-bold {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+}
+.advantage__text-regular {
+  font-weight: normal;
+  font-style: normal;
+}
+.advantage__priority {
+  margin-top: -.3rem;
+  margin-left: 0.5rem;
+}
+.advantage__dataBase {
+  margin-top: 1.5rem;
+  margin-left: 6.5rem;
+}
+.advantage__diamond {
+  margin-top: 3.3rem;
+  margin-left: 12.5rem; 
+}
+.advantage__expert {
+  margin-top: 3rem;
+  margin-left: 6.3rem;
+}
+.advantage__security {
+  margin-top: 1.9rem;
+  margin-left: 0.5rem;
+}
+/* Комиссия и Качели */
+.commision {
+  background: linear-gradient(to top,#d6e9ea , #d3e6e7 , #f3fafb );
+  width: 100%;
+  background-size: cover;
+  border-top: 1px solid white;
+  margin: 0 auto;
+}
+.commision__title {
+  margin-top: 8.5rem;
+  margin-left: 6.5rem;
+  margin-bottom: 1.25rem;
+}
+.commision__title h3 {
+  font-size: 1.6rem;
+  font-family: "Spectral";
+  color: rgb(164, 126, 103);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+.commision__title span {
+  font-size: 2.4rem;
+  font-family: "Spectral";
+  color: black;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+.commision__text {
+  margin-left: 6.5rem;
+}
+.commision__text p {
+  font-size: 1.2rem;
+  font-family: "Alegreya Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+.commision__swing {
+  display: flex;
+}
+.commision__swing-text {
+  position: relative;
+  margin-top: 8.6rem;
+  margin-left: 1.75rem;
+}
+.commision__swing-text p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  text-align: right;
+}
+.commision__inner {
+  margin-left: 1.2rem;
+  position: relative;
+  padding-bottom: 5rem;
+  width: 67%;
+}
+.commision__board {
+  position: relative;
+  margin-top: 4.25rem;
+  z-index: 9;
+}
+.commision__board img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.commision__cylinder {
+  position: absolute;
+  top: 8.3rem;
+  left: 20.25rem;
+  z-index: 8;
+  width: 7.8rem;
+}
+.commision__cylinder img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.commision__inner-text {
+  margin-left: 1.25rem;
+  margin-top: 2rem;
+}
+.commision__inner-text p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  text-align: left;
+}
+.commision__cat {
+  position: absolute;
+  top: 5.3rem;
+  left: 2.3rem;
+  z-index: 10;
+}
+.commision__cat img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.commision__elephant {
+  position: absolute;
+  top: -8.5rem;
+  left: 30.5rem;
+  z-index: 10;
+  width: 39%;
+}
+.commision__elephant img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.commision__elephant-Svg {
+  margin: -6rem 0 1rem 1.5rem;
+}
+.commision__swing-svg {
+  position: absolute;
+  left: 7.5rem;
+  top: -3.5rem;
+}
+/* Медиа-запросы */
+
+@media screen and (max-width:1400px) {
+  .container {
+    max-width:65rem;
+  }
+  .head__main {
+    margin-left: 3.7rem;
+  }
+  .commision__elephant {
+    top: -7.5rem;
+    left: 27.5rem;
+  }
+}
+@media screen and (max-width:1280px) {
+  html {
+    font-size: 18px;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin:0 auto;
+ }
+  .commision__cat {
+    top: 4.2rem;
+  }
+  .advantage__priority {
+    margin-left: 2.5rem;
+  }
+  .advantage__dataBase {
+    margin-left: 8.5rem;
+  }
+  .head__name {
+    top: 0.5rem;
+    right: 9rem;
+  }
+  .commision__swing-svg {
+    left: 6.5rem;
+  }
+  .commision__cylinder {
+    top: 7.8rem;
+  }
+}
+@media screen and (max-width:1024px) {
+ html {
+    font-size: 16px;
+ }
+ img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin:0 auto;
+ }
+ .head__logo p {
+    left: 2.2rem;
+ }
+ .head__phone {
+    margin-left: 0;
+ }
+ .head__time {
+    margin-left: 0.9rem;
+ }
+ .head__image {
+    top: -0.8rem;
+ }
+ .head__name {
+    top: 5.5rem;
+ }
+ .advantage {
+    flex-wrap: wrap;
+ }
+ .advantage__wrapper {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+ }
+ .advantage__print {
+    left: 29rem;
+ }
+ .advantage__pen {
+    left: 18.2rem;
+ }
+ .advantage__circleMax {
+    left: 3.5rem;
+ }
+ .advantage__circleMin {
+    left: 10.35rem;
+ }
+ .advantage__circle-Title {
+    left: 20.6rem;
+ }
+ .advantage__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-content: space-between;
+ }
+ .advantage__priority {
+    margin: 0;
+ }
+ .advantage__dataBase {
+    margin: 0;
+ }
+ .advantage__diamond {
+    margin: 0;
+ }
+ .advantage__expert {
+   margin: 0;
+ }
+ .advantage__security {
+   margin: 0;
+ }
+ .commision__cat {
+  top: 3.2rem;
+  }
+.commision__swing-svg {
+  top: -4.5rem;
+  left: 5.5rem;
+  }
+}
+@media screen and (max-width:770px) {
+ html {
+    font-size: 14px;
+ }
+ .container {
+    max-width: 57rem;
+ }
+ .head__logo p {
+    font-size: 1.45rem;
+    left: 2rem;
+}
+  .head__main {
+    margin-left: 1rem;
+    width: 62%;  
+}
+  .head__main p {
+    font-size: 13px;
+  }
+  .head__direction {
+    padding-left: 0;
+  }
+  .head__title h1 {
+    font-size: 2.7rem;
+  }
+  .head__title h2 {
+    font-size: 1.9rem;
+  }
+  .head__text p {
+    font-size: 1.3rem;
+  }
+  .head__name {
+    right: 6rem;
+    top: 3.5rem;
+  }
+  .advantage__circleMax {
+    left: 1.5rem;
+  }
+  .advantage__circleMin {
+    left: 9.35rem;
+  }
+  .advantage__print {
+    width: 33%;
+  }
+  .advantage__pen {
+    width: 6.25rem;
+    left: 14rem;
+  }
+  .advantage__image img {
+    width: 70%;
+  }
+  .advantage__circle-Title {
+    left: 17.6rem;
+  }
+  .commision__swing-svg {
+    display: none;
+  }
+  .commision__elephant-Svg {
+    display: none;
+  }
+  .commision__cat {
+    top: 3rem;
+    left: 1.4rem;
+  }
+  .commision__cat img {
+    width: 80%;
+    display: block;
+    height: auto;
+    margin:0 auto;
+  }
+  .commision__elephant {
+    top: -5.5rem;
+    left: 22.5rem;
+  }
+  .commision__cylinder {
+    top: 7.2rem;
+    left: 13rem;
+  }
+  .commision__cylinder img {
+    width: 80%;
+    display: block;
+    height: auto;
+    margin:0 auto;
+  }
+}
+@media screen and (max-width:500px) {
+  .head__wrapper {
+    flex-wrap: wrap;
+  }
+  .head__wrap {
+    width: 23%;
+    margin-left: 2rem;
+  }
+  .head__description {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .head__description p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .head__main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .head__inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .head__content {
+    width: 100%;
+  }
+  .head__text {
+    margin-bottom: 2rem;
+  }
+  .head__boss {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .head__name {
+    position: static;
+    order: 1;
+    align-self: flex-start;
+    margin-left: -14rem;
+    margin-top: 2rem;
+  }
+  .head__image {
+    position: static;
+    width: 80%;
+  }
+  .selection__btn {
+    margin:0 auto;
+  }
+  .advantage__circleMax {
+    display: none;
+  }
+  .advantage__circleMin {
+    display: none;
+  }
+  .advantage__circle-Title {
+    top: -8.8rem;
+    left: 9.6rem;
+  }
+  .advantage__book {
+    margin-top: 0;
+    margin-left: 1.2rem;
+    width: 35rem;
+  }
+  .advantage__pen {
+    width: 5rem;
+    left: 9rem;
+    top: 8.5rem;
+  }
+  .advantage__print {
+    left: 21rem;
+    top: 6.5rem;
+  }
+  .advantage__wrap {
+    justify-content: start;
+    margin-left: 4rem;
+    
+  }
+  .advantage__image {
+    align-content: flex-end;
+  }
+  .advantage__item {
+    padding-bottom: 2rem;
+  }
+  .advantage__diamond .advantage__text {
+    padding-right: 4rem;
+  }
+  .commision__title {
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+  }
+  .commision__text {
+    margin-left: 1.5rem;
+  }
+  .commision__swing {
+    display: none;
+  }
+}
+@media screen and (max-width:320px) {
+  .head__logo p {
+    left: 1.3rem;
+    top: 0.5rem;
+  }
+  .head__description {
+    width: 57%;
+    margin: 0;
+    padding: 0;
+  }
+  .head__main {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .head__direction {
+    width: 45%;
+  }
+  .head__time {
+    margin-left: 0.5rem;
+  }
+  .head__title h1 {
+    font-size: 2.1rem
+  }
+  .head__boss {
+    flex-wrap: wrap;
+  }
+  .head__name {
+    order: 0;
+    margin: 0;
+  }
+  .head__image {
+    width: 100%;
+  }
+  .selection__btn {
+    margin-left: .8rem;
+  }
+  .advantage__wrapper {
+    margin-bottom: 2rem;
+  }
+  .advantage__circle-Title {
+    width: 15.9rem;
+    height: 14.9rem;
+    left: 2.6rem;
+  }
+  .advantage__book {
+    margin-top: 9px;
+    margin-left: 0;
+    width: 20rem;
+  }
+  .advantage__print {
+    display: none;
+  }
+  .advantage__pen {
+    width: 4rem;
+    left: 6rem;
+    top: 4.5rem;
+  }
+  .advantage__wrap {
+    margin-left: 2rem;
+  }
+  .commision__title {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+  }
+  .commision__title h3 {
+    font-size: 1.5rem;
+  }
+  .commision__title span {
+    font-size: 2.2rem;
+  }
+  .commision__text {
+    margin-left: 1rem;
+  }
+}
